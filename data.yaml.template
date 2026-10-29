@@ -1,0 +1,67 @@
+# You normally don't need to hand-edit this — download_openimages_food.py
+# generates dataset/data.yaml automatically with the right classes/paths.
+# This template is here for reference or if you're adding your own
+# locally-collected photos (e.g. Gambian dishes) as a separate dataset
+# to merge in later.
+
+path: ./dataset
+train: images/train
+val: images/val
+
+names:
+  0: apple
+  1: banana
+  2: orange
+  3: mango
+  4: watermelon
+  5: grape
+  6: pineapple
+  7: strawberry
+  8: lemon
+  9: pear
+  10: avocado
+  11: bread
+  12: bagel
+  13: croissant
+  14: pancake
+  15: waffle
+  16: muffin
+  17: donut
+  18: cookie
+  19: cake
+  20: pastry
+  21: pretzel
+  22: pizza
+  23: burger
+  24: hot_dog
+  25: sandwich
+  26: submarine_sandwich
+  27: taco
+  28: burrito
+  29: sushi
+  30: fries
+  31: egg
+  32: cheese
+  33: popcorn
+  34: guacamole
+  35: salad
+  36: pasta
+  37: tomato
+  38: potato
+  39: carrot
+  40: broccoli
+  41: cucumber
+  42: mushroom
+  43: bell_pepper
+  44: cabbage
+  45: shrimp
+  46: coffee
+  47: juice
+  48: ice_cream
+  49: milk
+# Every name here MUST also exist as a key in calorie_db.json (minus the
+# "_comment"/"_local_dishes_comment" keys) or that class gets detected but
+# shows no calorie value. To add local dishes (benachin, domoda, etc.),
+# append them here with the next free index AND add matching entries to
+# calorie_db.json — but you'll need your own labeled photos for those
+# classes since no public dataset has them.
